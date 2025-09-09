@@ -1,0 +1,36 @@
+{
+  "name": "meteora-dbc-backend",
+  "version": "1.0.0",
+  "description": "Backend for Meteora DBC Token Creation and Trading Platform",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "keywords": ["solana", "meteora", "dbc", "tokens", "trading"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.9",
+    "@meteora-ag/dynamic-bonding-curve-sdk": "^1.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.3.3",
+    "ts-node-dev": "^2.0.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.8"
+  }
+}
